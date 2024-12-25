@@ -21,7 +21,7 @@ public class StudentController {
 @Autowired
 StudentService ss;
 
-@PostMapping(value="/post")
+@PostMapping(value="/postStudent")
 public String post (@RequestBody Student s) {
 	return ss.post(s);
 }
